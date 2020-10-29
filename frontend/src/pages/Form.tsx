@@ -48,12 +48,6 @@ const Form = () => {
 
   return (
     <CONTAINER onSubmit={sendData}>
-      <GlobalSelect
-        questions={questions.age}
-        label={'大まかな年齢'}
-        updateValue={updateValueAge}
-        isRequired={'必須'}
-      />
       <GlobalInput
         type="date"
         label={'利用日時'}
@@ -64,6 +58,12 @@ const Form = () => {
         type="time"
         label={'利用時間'}
         updateValue={updateValueTime}
+        isRequired={'必須'}
+      />
+      <GlobalSelect
+        questions={questions.age}
+        label={'大まかな年齢'}
+        updateValue={updateValueAge}
         isRequired={'必須'}
       />
       <GlobalSelect
